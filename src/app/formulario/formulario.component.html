@@ -1,0 +1,13 @@
+<form [formGroup]="alumnoformulario" #Formformulario="ngForm"(ngSubmit)="addmodificar()">
+<label>Id:</label> <input type="number" formControlName="id" required="">
+<br><br> 
+<label>Dni:</label> 
+<input type="text" formControlName="dni" required="">
+<br><br> 
+<label>Nombre:</label> 
+<input type="text" formControlName="nombre" required="">
+<br><br> 
+<label>Horas de Formación:</label> 
+<input type="number" formControlName="horas" required="">
+<br><br> 
+<button type="submit" [disabled]="Formformulario.invalid">Alta</button> </form>
